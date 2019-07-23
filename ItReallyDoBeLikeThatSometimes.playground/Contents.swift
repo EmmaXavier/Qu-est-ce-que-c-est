@@ -83,6 +83,7 @@ print("\(Toto)")
 //array is an ordered collection
 //array ordered starting at zero
 //dictionary is assosciated with something else
+//dictionaries are not ordered, each piece of data has a label (key) and a piece of data (value)
 
 var planets = ["Mercury", "Venus", "Mars", "Earth", "Saturn", "Jupiter", "Neptune", "Uranus", "Pluto"]
 var membersOfQueen = ["Freddie Mercury", "Brian May", "John Deacon", "Roger Taylor"]
@@ -109,3 +110,48 @@ youGotFriends.remove(at : 4)
 youGotFriends[2] = "Crazy Joe"
 
 print("\(youGotFriends[2]) isn't actually quite as crazy as one might think")
+
+
+var pizzaSize = ["Small", "Medium", "Large"]
+
+pizzaSize[1]
+
+func orderPizza(pizzaTop : String) {
+    print("Can I please have a \(pizzaSize[0]) \(pizzaTop) pizza?")
+}
+
+orderPizza(pizzaTop: "Cheese")
+
+func pizzaAmount(howManyFrans : Int) -> Int {
+    let totalPeeps = howManyFrans + 1
+    let numSlicesInt = totalPeeps * 2
+    return numSlicesInt
+}
+let numSlices = "\(pizzaAmount(howManyFrans : 4))"
+
+print("Can I please have a cheese pizza  with \(numSlices) slices?")
+
+var killJoysMakeSomeNoise = "Na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na na"
+
+print("\(killJoysMakeSomeNoise)")
+
+for friend in youGotFriends {
+    print("What's good \(friend)?")
+}
+
+var favSongs = ["Good Old Fashioned Lover Boy": "Queen", "Come Together": "The Beatles", "Honey Whisky":  "SATTICA", "Bohemian Rhapsody": "Queen", "Changes": "David Bowie", "Cancer": "My Chemical Romance"]
+
+var myPeople = ["EmmaXavier": "5.27.03", "DD": "1.03.70", "Mary Todd": "5.29.73"]
+
+myPeople["Mary Todd"] = "5.29.74"
+
+for friend in myPeople {
+    print("Yo \(friend) got this")
+}
+
+print(myPeople["DD"]!)
+
+print(myPeople.keys)
+
+print(Array(myPeople.keys))
+
