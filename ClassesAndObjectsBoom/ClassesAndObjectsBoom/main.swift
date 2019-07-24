@@ -12,5 +12,6 @@ var newScholar = Scholar(scholarName: "EmmaXavier", scholarAge: 16, scholarGrade
 
 newScholar.insultHeight()
 
-oneCity.want()
+paris.want()
 
+paris.surprise()
