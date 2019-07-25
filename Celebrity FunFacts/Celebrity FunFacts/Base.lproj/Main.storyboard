@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Celebrity_FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-iS-VzI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.97769591970000003" green="0.97334203730000002" blue="0.78008045429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Shia Labeouf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-wT-okf">
+                                <rect key="frame" x="83" y="44" width="249" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Hea-9K-ICs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.2397649922" green="0.47990204019999999" blue="0.45668135599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.2397649922" green="0.47990204019999999" blue="0.45668135599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Actual Cannibal Shia Labeouf" translatesAutoresizingMaskIntoConstraints="NO" id="3iJ-oM-nDg">
+                                <rect key="frame" x="38" y="120" width="339" height="467"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="467" id="eSe-hB-MQa"/>
+                                    <constraint firstAttribute="width" constant="339" id="gQW-xS-b02"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NQ-0K-413">
+                                <rect key="frame" x="65" y="595" width="285" height="201"/>
+                                <string key="text">You're walking in the woods
+There's no one around and your phone is dead
+Out of the corner of your eye you spot him:
+Shia LaBeouf.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0015930825635361834" green="0.15699886658031093" blue="0.0014521301968341671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXc-6d-A1q">
+                                <rect key="frame" x="228" y="811" width="70" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2397649922" green="0.47990204019999999" blue="0.45668135599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0015930825639999999" green="0.15699886660000001" blue="0.0014521301969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcE-eb-7cK"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5U-S0-TTx">
+                                <rect key="frame" x="-82" y="746" width="414" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tVf-iS-VzI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="04G-ws-tse"/>
+                            <constraint firstItem="3iJ-oM-nDg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="6y8-Ng-ABC"/>
+                            <constraint firstItem="3iJ-oM-nDg" firstAttribute="top" secondItem="GHs-wT-okf" secondAttribute="bottom" constant="8" id="8ji-ty-2uC"/>
+                            <constraint firstItem="3NQ-0K-413" firstAttribute="top" secondItem="3iJ-oM-nDg" secondAttribute="bottom" constant="18" id="Caa-cP-wG2"/>
+                            <constraint firstItem="GHs-wT-okf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="KjR-kt-Rle"/>
+                            <constraint firstItem="tVf-iS-VzI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OzT-2e-QtS"/>
+                            <constraint firstItem="tVf-iS-VzI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hDZ-Os-lSc"/>
+                            <constraint firstAttribute="bottom" secondItem="tVf-iS-VzI" secondAttribute="bottom" id="tFn-Pz-1EZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3iJ-oM-nDg" secondAttribute="trailing" constant="37" id="v8h-Nx-Fcd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="celebNames" destination="M5U-S0-TTx" id="R7H-5Z-W6f"/>
+                        <outlet property="celebPic" destination="3iJ-oM-nDg" id="4xj-Gz-EIG"/>
+                        <outlet property="pageTitle" destination="GHs-wT-okf" id="jZa-D8-AyU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Actual Cannibal Shia Labeouf" width="683" height="1024"/>
+    </resources>
+</document>
