@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardYikes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4O6-cB-WMj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.97769591968911929" green="0.97334203728179525" blue="0.78008045426383199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yikes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtB-SH-d20">
+                                <rect key="frame" x="30" y="54" width="354" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.23976499221608832" green="0.47990204015544047" blue="0.45668135601803128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Actual Cannibal Shia Labeouf" translatesAutoresizingMaskIntoConstraints="NO" id="U9h-E8-LKq">
+                                <rect key="frame" x="55" y="157" width="304" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="N1K-rE-946"/>
+                                    <constraint firstAttribute="width" constant="304" id="pGJ-c5-7on"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbk-Xc-MxC">
+                                <rect key="frame" x="35" y="614.5" width="344" height="187.5"/>
+                                <string key="text">You're walking in the woods
+There's no one around and your phone is dead
+Out of the corner of your eye you spot him:
+Shia LaBeouf.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.2397649922" green="0.47990204019999999" blue="0.45668135599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U9h-E8-LKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="8EG-Le-hoZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lbk-Xc-MxC" secondAttribute="bottom" constant="60" id="9nr-0Q-gUd"/>
+                            <constraint firstItem="4O6-cB-WMj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dll-7t-kbf"/>
+                            <constraint firstItem="mtB-SH-d20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NCf-fL-mtG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mtB-SH-d20" secondAttribute="trailing" constant="30" id="bhZ-51-5B3"/>
+                            <constraint firstItem="lbk-Xc-MxC" firstAttribute="top" secondItem="U9h-E8-LKq" secondAttribute="bottom" constant="9.5" id="cX4-Vw-RXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U9h-E8-LKq" secondAttribute="trailing" constant="55" id="eyH-zQ-hdK"/>
+                            <constraint firstItem="mtB-SH-d20" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fFx-m3-0w2"/>
+                            <constraint firstItem="lbk-Xc-MxC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="iLJ-Jc-AqT"/>
+                            <constraint firstItem="4O6-cB-WMj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oD4-2l-hsr"/>
+                            <constraint firstItem="U9h-E8-LKq" firstAttribute="top" secondItem="mtB-SH-d20" secondAttribute="bottom" constant="43" id="tD4-kC-4LY"/>
+                            <constraint firstItem="4O6-cB-WMj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vIi-d5-u3Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbk-Xc-MxC" secondAttribute="trailing" constant="35" id="xs8-sy-G9c"/>
+                            <constraint firstAttribute="bottom" secondItem="4O6-cB-WMj" secondAttribute="bottom" id="ywl-8j-4eP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Actual Cannibal Shia Labeouf" width="683" height="1024"/>
+    </resources>
+</document>
