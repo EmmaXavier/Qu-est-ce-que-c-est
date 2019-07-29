@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera_Access_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dg-qQ-uyx">
+                                <rect key="frame" x="45" y="524" width="114" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="0oj-09-oc1"/>
+                                    <constraint firstAttribute="width" constant="114" id="927-cH-wU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Take a Selfie">
+                                    <color key="titleColor" red="0.97769591970000003" green="0.97334203730000002" blue="0.78008045429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeSelfieTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4D1-BK-yqW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-uc-9xz">
+                                <rect key="frame" x="183" y="525" width="186" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="3Fj-kl-X8U"/>
+                                    <constraint firstAttribute="height" constant="36" id="uJv-BP-7C3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Choose from Library">
+                                    <color key="titleColor" red="0.97769591970000003" green="0.97334203730000002" blue="0.78008045429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseLibraryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0gN-Uq-NqX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cameraaa" translatesAutoresizingMaskIntoConstraints="NO" id="Qzl-k0-4Js">
+                                <rect key="frame" x="81" y="169" width="252" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="252" id="Dh0-Hz-T56"/>
+                                    <constraint firstAttribute="width" constant="252" id="cwc-Do-hJd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="314" id="iDI-uy-2Hq"/>
+                                    <constraint firstAttribute="height" constant="314" id="lGE-FY-evH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63117327671525469" green="0.53741509953353495" blue="0.65210087435233155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dg-qQ-uyx" firstAttribute="top" secondItem="Qzl-k0-4Js" secondAttribute="bottom" constant="41" id="EaK-9u-sm7"/>
+                            <constraint firstItem="0dg-qQ-uyx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="JdK-oo-92T"/>
+                            <constraint firstItem="Qzl-k0-4Js" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="WFT-dZ-xyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NNS-uc-9xz" secondAttribute="trailing" constant="45" id="s0k-xR-CuP"/>
+                            <constraint firstItem="NNS-uc-9xz" firstAttribute="top" secondItem="Qzl-k0-4Js" secondAttribute="bottom" constant="42" id="uL8-SW-BC5"/>
+                            <constraint firstItem="Qzl-k0-4Js" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="wzs-bJ-uv9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qzl-k0-4Js" secondAttribute="trailing" constant="81" id="xku-7w-BnC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageDeposit" destination="Qzl-k0-4Js" id="awx-SZ-Uov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cameraaa" width="268" height="188"/>
+    </resources>
+</document>
